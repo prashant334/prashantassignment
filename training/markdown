@@ -6,3 +6,8 @@ import numpy as np         # dealing with arrays
 import os                  # dealing with directories
 from random import shuffle # mixing up or currently ordered data for generating randomness in data during training
 from tqdm import tqdm      # a nice pretty percentage bar for tasks. 
+import tflearn              # upper layer of tnesorflow
+import tensorflow as tf
+from tflearn.layers.conv import conv_2d, max_pool_2d    #patches for convoluting components
+from tflearn.layers.core import input_data, dropout, fully_connected
+from tflearn.layers.estimator import regression      
